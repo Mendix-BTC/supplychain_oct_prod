@@ -1,0 +1,115 @@
+{
+    "configVersion": 2,
+    "appIdentifier": "be.belgiantrain.scmbtc.prd",
+    "appName": "PROD-SCM-BTC",
+    "bundleName": {
+        "main": "supplychainPrd",
+        "dev": "supplychainPDev"
+    },
+    "deviceTarget": {
+        "phone": true,
+        "tablet": true
+    },
+    "orientation": {
+        "portrait": true,
+        "landscape": true
+    },
+    "permissions": [
+        {
+            "title": "Internet",
+            "name": "android.permission.INTERNET",
+            "platform": "android",
+            "required": true
+        },
+        {
+            "title": "Read External Storage",
+            "name": "android.permission.READ_EXTERNAL_STORAGE",
+            "platform": "android",
+            "required": true
+        },
+        {
+            "title": "System Alert Window",
+            "name": "android.permission.SYSTEM_ALERT_WINDOW",
+            "platform": "android",
+            "required": true
+        },
+        {
+            "title": "Write External Storage",
+            "name": "android.permission.WRITE_EXTERNAL_STORAGE",
+            "platform": "android",
+            "required": true
+        },
+        {
+            "title": "Location - Always Usage",
+            "name": "NSLocationAlwaysUsageDescription",
+            "purpose": "To use that feature, the app needs access to your location.",
+            "platform": "ios",
+            "required": true
+        },
+        {
+            "title": "Location - When In Use Usage",
+            "name": "NSLocationWhenInUseUsageDescription",
+            "purpose": "To use that feature, the app needs access to your location.",
+            "platform": "ios",
+            "required": true
+        },
+        {
+            "title": "Location - Always And When in Use Usage",
+            "name": "NSLocationAlwaysAndWhenInUseUsageDescription",
+            "purpose": "To use that feature, the app needs access to your location.",
+            "platform": "ios",
+            "required": true
+        },
+        {
+            "title": "Vibrate",
+            "name": "android.permission.VIBRATE",
+            "platform": "android",
+            "required": false
+        }
+    ],
+    "capabilities": {
+        "deepLink": {
+            "value": "supplychainbtcprod",
+            "enabled": true,
+            "android": {
+                "webLinks": [
+                    {
+                        "host": "",
+                        "path": ""
+                    }
+                ]
+            }
+        },
+        "maps": {
+            "value": "",
+            "enabled": false
+        },
+        "mapsIos": {
+            "enabled": false
+        },
+        "pushNotifications": {
+            "enabled": false
+        },
+        "crashlytics": {
+            "enabled": false
+        },
+        "firebaseAndroid": {
+            "enabled": false
+        },
+        "firebaseIos": {
+            "enabled": false
+        },
+        "localNotifications": {
+            "enabled": true
+        },
+        "appCenterOTA": {
+            "enabled": true
+        },
+        "nativeOTA": {
+            "enabled": false
+        }
+    },
+    "appVersion": "9.0.1",
+    "buildNumber": 28,
+    "runtimeUrl": "https://supplychainmendixapp.intern-belgiantrain.be/"
+}
