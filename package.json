@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "postinstall": "patch-package && jetify",
-    "configure": "native-mobile-toolkit configure --config-path='./config.json' --verbose"
+    "configure": "native-mobile-toolkit configure --config-path='./config.json' --verbose",
+    "instrumentDynatrace": "node node_modules\\@dynatrace\\react-native-plugin\\scripts\\instrument.js"
   },
   "dependencies": {
+    "@dynatrace/react-native-plugin": "^2.275.1",
     "@react-native-community/async-storage": "1.12.1",
     "@react-native-community/cameraroll": "4.0.1",
     "@react-native-community/datetimepicker": "3.0.3",
@@ -31,7 +33,8 @@
     "react-native-sqlite-storage": "5.0.0",
     "react-native-svg": "12.1.0",
     "react-native-vector-icons": "9.2.0",
-    "react-native-video": "^5.2.0"
+    "react-native-video": "^5.2.0",
+    "react-native-zebra-scanner": "git+https://github.com/DavidVerstrichtBpm/endarebvba-react-native-zebra-scanner-no-keystroke.git"
   },
   "devDependencies": {
     "@babel/runtime": "^7.8.4",
